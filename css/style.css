@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*1 rem = 10px*/
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "open sans", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;/*16px*/
+
+    background-color: #fff7fb;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+h2{
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.btn{
+    background-color: #ffd166;
+    color:  #2a1e35;
+    border: none;
+    font-size:  1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+.btn-eliminar-carrito{
+    background-color: #ff6666;
+    border: 2px solid #f61313;
+}
+
+.btn-vaciar-carrito{
+    background-color: #ffd166;
+    color: black;
+}
+
+.btn-vaciar-carrito:hover{
+    background-color: aquamarine;
+}
+
+header, footer{
+    background-color: #503a74;
+    color: #fff7fb;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.div-logo{
+    margin-left: 2rem;
+    /*font-size: 3rem;
+    font-weight: bold;*/
+
+    width: 10rem;
+}
+
+/*.logo,*/
+.header-nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+
+    color: inherit;/*heredado*/
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav{
+    margin-right: 2rem;
+}
+
+.header-nav ul, footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+footer nav ul li{
+    padding: 1 rem;
+}
+
+/*home*/
+
+.titulo-home{
+    margin: 3rem 0;
+}
+
+.titulo-productos{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.parrafo{
+
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    background-color: #8c73b563;
+    color:black;
+
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img,.logoimg{
+    width: 100%;
+}
+
+/*contacto*/
+
+.titulo-contacto{
+    margin: 2rem 0;
+}
+
+.form-contacto {
+    background-color:  #8c73b563;
+    color: #2a1e35;
+
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 2rem;
+
+    box-shadow: 0 10px 30px rgb(0,0,0,0.15);
+
+    
+}
+
+.grupo-input input,
+.grupo-input textarea{
+    border: none;
+
+    background-color: transparent;
+    border-bottom: solid 2px #2a1e35;
+    margin-bottom: 3rem;
+}
+
+.grupo-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1 rem;
+    margin-bottom: 2rem;
+}
+.btn-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*carrito*/
+
+.mensaje-carrito-vacio{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.acciones-carrito{
+    margin-top: 2rem;
+}
+
+
+/*media*/
+
+@media(max-width: 768px){
+    header,footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .div-logo,
+    .header-nav{
+        margin: 0;
+    }
+    .contenedor-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,6 @@
+[
+    {"id": "1", "nombre":"Muffin", "img": "img/muffin.webp", "precio":16000},
+    {"id": "2", "nombre":"Brownie", "img": "img/bownie.webp", "precio":8500},
+    {"id": "3", "nombre":"Hot cakes", "img": "img/hotcakes.webp", "precio":10000},
+    {"id": "4", "nombre":"Yogurt", "img": "img/yougurt.webp", "precio":5000}
+]
